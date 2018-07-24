@@ -13,5 +13,5 @@ get '/public' do
 end
 
 get '/cat' do
-  "<img src='http://bit.ly/1eze8aE' alt='kitty' style='border:red dashed;'>"
+  erb(:index)
 end
