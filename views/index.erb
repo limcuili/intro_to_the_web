@@ -8,11 +8,13 @@ Without '=' in the erb tags (Line 2, inputting the name),
 the content is read but not shown.
 <% end %>
 
+<% if @name ==nil %>
 <form action="/named-cat">
   <label for="name">Name Your Kitty:</label>
   <input type="text" name="name">
   <input type="submit" value="Submit">
 </form>
+<% end %>
 
 <div style='border: dashed red'>
   <img src='http://bit.ly/1eze8aE' alt='kitty'>
