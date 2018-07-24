@@ -1,2 +1,19 @@
+<% if @name %>
 <h1>My name is <%=@name%></h1>
-<img src='http://bit.ly/1eze8aE' alt='kitty' style='border:red dashed;'>
+<% end %>
+
+<% if false %>
+This 'if false'-end block allows me to input a comment here.
+Without '=' in the erb tags (Line 2, inputting the name),
+the content is read but not shown.
+<% end %>
+
+<form action="/named-cat">
+  <label for="name">Name Your Kitty:</label>
+  <input type="text" name="name">
+  <input type="submit" value="Submit">
+</form>
+
+<div style='border: dashed red'>
+  <img src='http://bit.ly/1eze8aE' alt='kitty'>
+</div>
